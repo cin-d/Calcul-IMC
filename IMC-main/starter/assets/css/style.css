@@ -1,0 +1,116 @@
+@font-face {
+font-family: 'Alegreya-Bold';
+  src: url(../fonts/Alegreya-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Alegreya-Regular';
+  src: url(../fonts/Alegreya-Regular.ttf);
+}
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya-Regular';
+}
+
+body {
+  min-height: 100vh;
+  font-family: Lato, Helvetica, sans-serif;
+  background: linear-gradient(90deg, rgba(160,210,235,1) 0%, rgba(208,189,244,1) 50%, rgba(0,0,0,1) 100%);
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
+
+.container {
+  width : 850px;
+  height: 500px;
+  background-color: rgba(245, 224, 199, 0.429);
+  border-radius: 5px; 
+  padding: 20px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Alegreya-Bold';
+  font-size: 40px;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center; 
+  margin-bottom: 40px;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+.input-container {
+  display: flex; 
+  justify-content: center; 
+}
+
+.input-container label {
+  display: block; 
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.input-group:nth-child(2) {
+  margin-left: 20px;
+}
+
+.input-container input {
+  min-width: 350px;
+  font-size: 18px;
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+button {
+  background-color:  rgb(164, 136, 217);
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  display:block;
+  margin: auto; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  box-shadow: 2px 4px 5px rgba(0,0,0,0,0.3);
+}
+
+button:hover {
+  background-color: rgb(133, 91, 211);
+}
+
+.bmi-value {
+  text-align: center; 
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+@media(max-width: 800px) {
+  .container {
+    max-width: 600px;
+  }
+  .input-container {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .input-group:nth-child(2) {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
